@@ -1,0 +1,89 @@
+id = "noan/scopebar-v2"
+name = "Scope Bar (Go)"
+version = "2.0.0"
+plugin_api = 3
+author = "noan"
+license = "MIT"
+icon = "wave-sine"
+deprecated = false
+description = "Native Go audio oscilloscope rendered as a compact braille trace."
+tags = ["bar", "audio", "visualizer", "oscilloscope"]
+dependencies = ["pipewire", "pulseaudio-utils"]
+
+[[widget]]
+id = "scope"
+entry = "widget.luau"
+
+  [[widget.setting]]
+  key = "width"
+  type = "int"
+  label_key = "settings.width.label"
+  default = 48
+  min = 8
+  max = 96
+
+  [[widget.setting]]
+  key = "lines"
+  type = "int"
+  label_key = "settings.lines.label"
+  default = 3
+  min = 1
+  max = 5
+
+  [[widget.setting]]
+  key = "font_size"
+  type = "int"
+  label_key = "settings.font_size.label"
+  default = 5
+  min = 2
+  max = 12
+
+  [[widget.setting]]
+  key = "sensitivity"
+  type = "int"
+  label_key = "settings.sensitivity.label"
+  default = 140
+  min = 20
+  max = 500
+
+  [[widget.setting]]
+  key = "smoothing"
+  type = "int"
+  label_key = "settings.smoothing.label"
+  default = 55
+  min = 0
+  max = 95
+
+  [[widget.setting]]
+  key = "thickness"
+  type = "int"
+  label_key = "settings.thickness.label"
+  default = 2
+  min = 1
+  max = 6
+
+  [[widget.setting]]
+  key = "color"
+  type = "color"
+  label_key = "settings.color.label"
+  default = "primary"
+
+  [[widget.setting]]
+  key = "capture_device"
+  type = "string"
+  label_key = "settings.capture_device.label"
+  default = ""
+
+  [[widget.setting]]
+  key = "keep_every"
+  type = "int"
+  label_key = "settings.keep_every.label"
+  default = 16
+  min = 4
+  max = 96
+
+  [[widget.setting]]
+  key = "hide_when_idle"
+  type = "bool"
+  label_key = "settings.hide_when_idle.label"
+  default = true

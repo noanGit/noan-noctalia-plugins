@@ -1,0 +1,178 @@
+id = "noan/hyprspaces"
+name = "HyprSpaces"
+version = "1.0.0"
+plugin_api = 14
+author = "noan"
+license = "MIT"
+icon = "apps"
+deprecated = false
+description = "Workspace pills for the bar, mirroring the built-in Workspaces widget, plus icons of ALL apps running on each workspace."
+tags = ["bar", "workspaces", "taskbar", "hyprland"]
+dependencies = ["hyprland"]
+
+[[widget]]
+id = "hyprspaces"
+entry = "widget.luau"
+
+[widget.actions]
+middle = "none"
+
+  [[widget.setting]]
+  key = "style"
+  type = "select"
+  label_key = "settings.style.label"
+  description_key = "settings.style.description"
+  default = "regular"
+  options = [
+    { value = "regular", label_key = "settings.style.options.regular" },
+    { value = "minimal", label_key = "settings.style.options.minimal" },
+    { value = "focus_hint", label_key = "settings.style.options.focus_hint" },
+    { value = "show_always", label_key = "settings.style.options.show_always" },
+  ]
+
+  [[widget.setting]]
+  key = "show_app_icons"
+  type = "bool"
+  label_key = "settings.show_app_icons.label"
+  description_key = "settings.show_app_icons.description"
+  default = true
+
+  [[widget.setting]]
+  key = "app_icon_size"
+  type = "int"
+  label_key = "settings.app_icon_size.label"
+  description_key = "settings.app_icon_size.description"
+  default = 16
+  min = 10
+  max = 32
+
+  [[widget.setting]]
+  key = "app_icons_max"
+  type = "int"
+  label_key = "settings.app_icons_max.label"
+  description_key = "settings.app_icons_max.description"
+  default = 0
+  min = 0
+  max = 16
+
+  [[widget.setting]]
+  key = "show_labels"
+  type = "bool"
+  label_key = "settings.show_labels.label"
+  default = true
+
+  [[widget.setting]]
+  key = "label_source"
+  type = "select"
+  label_key = "settings.label_source.label"
+  default = "id"
+  options = [
+    { value = "id", label_key = "settings.label_source.options.id" },
+    { value = "name", label_key = "settings.label_source.options.name" },
+  ]
+
+  [[widget.setting]]
+  key = "labels_only_when_occupied"
+  type = "bool"
+  label_key = "settings.labels_only_when_occupied.label"
+  description_key = "settings.labels_only_when_occupied.description"
+  default = false
+
+  [[widget.setting]]
+  key = "max_label_chars"
+  type = "int"
+  label_key = "settings.max_label_chars.label"
+  description_key = "settings.max_label_chars.description"
+  default = 1
+  min = 1
+  max = 20
+
+  [[widget.setting]]
+  key = "hide_when_empty"
+  type = "bool"
+  label_key = "settings.hide_when_empty.label"
+  description_key = "settings.hide_when_empty.description"
+  default = false
+
+  [[widget.setting]]
+  key = "show_all_outputs"
+  type = "bool"
+  label_key = "settings.show_all_outputs.label"
+  description_key = "settings.show_all_outputs.description"
+  default = false
+
+  [[widget.setting]]
+  key = "focused_output_only"
+  type = "bool"
+  label_key = "settings.focused_output_only.label"
+  description_key = "settings.focused_output_only.description"
+  default = false
+
+  [[widget.setting]]
+  key = "pill_scale"
+  type = "double"
+  label_key = "settings.pill_scale.label"
+  description_key = "settings.pill_scale.description"
+  default = 1.0
+  min = 0.1
+  max = 1.0
+  step = 0.05
+
+  [[widget.setting]]
+  key = "active_pill_size"
+  type = "double"
+  label_key = "settings.active_pill_size.label"
+  description_key = "settings.active_pill_size.description"
+  default = 2.2
+  min = 0.25
+  max = 8.0
+  step = 0.05
+
+  [[widget.setting]]
+  key = "inactive_pill_size"
+  type = "double"
+  label_key = "settings.inactive_pill_size.label"
+  description_key = "settings.inactive_pill_size.description"
+  default = 1.0
+  min = 0.25
+  max = 8.0
+  step = 0.05
+
+  [[widget.setting]]
+  key = "capsule_radius"
+  type = "int"
+  label_key = "settings.capsule_radius.label"
+  description_key = "settings.capsule_radius.description"
+  default = 12
+  min = 0
+  max = 24
+
+  [[widget.setting]]
+  key = "change_color_on_hover"
+  type = "bool"
+  label_key = "settings.change_color_on_hover.label"
+  default = true
+
+  [[widget.setting]]
+  key = "focused_color"
+  type = "color"
+  label_key = "settings.focused_color.label"
+  default = "primary"
+
+  [[widget.setting]]
+  key = "occupied_color"
+  type = "color"
+  label_key = "settings.occupied_color.label"
+  default = "secondary"
+
+  [[widget.setting]]
+  key = "empty_color"
+  type = "color"
+  label_key = "settings.empty_color.label"
+  default = "secondary"
+
+  [[widget.setting]]
+  key = "urgent_color"
+  type = "color"
+  label_key = "settings.urgent_color.label"
+  default = "error"

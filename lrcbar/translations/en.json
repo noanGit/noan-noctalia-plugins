@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "fps_limit": {
+      "label": "FPS limit",
+      "description": "Animation refresh rate (30-120). Higher = smoother, more CPU."
+    },
+    "max_chars": {
+      "label": "Max line length",
+      "description": "Maximum characters before scrolling (10-80). Longer lines scroll right-to-left once the highlight reaches the visible middle."
+    },
+    "active_color": {
+      "label": "Active color",
+      "description": "Color role (primary, on_surface, #rrggbb) for sung text."
+    },
+    "inactive_color": {
+      "label": "Inactive color",
+      "description": "Color role for upcoming text."
+    },
+    "player": {
+      "label": "Target player",
+      "description": "Player name for playerctl/lrc_tty (e.g. spotify, mpv). Empty = pick automatically among all players."
+    },
+    "hide_when_paused": {
+      "label": "Hide when paused",
+      "description": "Show nothing when playback is paused."
+    },
+    "intro_gap_ms": {
+      "label": "Intro gap threshold",
+      "description": "Show ♪ ♪ ♪ from track start if lyrics begin later than this (ms)."
+    },
+    "interlude_text": {
+      "label": "Interlude text",
+      "description": "Symbols shown during empty lyric lines and intros."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "settings.style.label": "Style",
+  "settings.style.description": "Pill layout. 'Show always' keeps every pill expanded and shows ALL apps running on the workspace.",
+  "settings.style.options.regular": "Regular",
+  "settings.style.options.minimal": "Minimal",
+  "settings.style.options.focus_hint": "Focus hint",
+  "settings.style.options.show_always": "Show always",
+
+  "settings.show_app_icons.label": "Show app icons",
+  "settings.show_app_icons.description": "Show icons of every window running on a workspace inside its pill.",
+  "settings.app_icon_size.label": "App icon size (px)",
+  "settings.app_icon_size.description": "Size of the per-workspace application icons.",
+  "settings.app_icons_max.label": "Max icons per workspace",
+  "settings.app_icons_max.description": "Trim long icon lists; 0 shows all, otherwise a '+N' counter is appended.",
+
+  "settings.show_labels.label": "Show labels",
+  "settings.label_source.label": "Label source",
+  "settings.label_source.options.id": "Index",
+  "settings.label_source.options.name": "Name",
+  "settings.labels_only_when_occupied.label": "Labels only when occupied",
+  "settings.labels_only_when_occupied.description": "Hide labels on empty, unfocused workspaces.",
+  "settings.max_label_chars.label": "Max label characters",
+  "settings.max_label_chars.description": "Truncate named workspace labels to this many characters. Numeric labels (workspace ids) are always shown in full.",
+
+  "settings.hide_when_empty.label": "Hide unoccupied workspaces",
+  "settings.hide_when_empty.description": "Only show workspaces that have windows or are focused.",
+  "settings.show_all_outputs.label": "Show all workspaces",
+  "settings.show_all_outputs.description": "Show workspaces from all monitors instead of this bar's monitor only.",
+  "settings.focused_output_only.label": "Follow focused monitor",
+  "settings.focused_output_only.description": "Always show the workspaces of the currently focused monitor.",
+
+  "settings.pill_scale.label": "Pill scale",
+  "settings.pill_scale.description": "Overall size multiplier for the pills.",
+  "settings.active_pill_size.label": "Active pill size",
+  "settings.active_pill_size.description": "How much wider the active workspace pill is.",
+  "settings.inactive_pill_size.label": "Inactive pill size",
+  "settings.inactive_pill_size.description": "Width factor of inactive workspace pills.",
+  "settings.capsule_radius.label": "Capsule radius",
+  "settings.capsule_radius.description": "Corner rounding of the pills.",
+
+  "settings.change_color_on_hover.label": "Change color on hover",
+  "settings.focused_color.label": "Focused color",
+  "settings.occupied_color.label": "Occupied color",
+  "settings.empty_color.label": "Empty color",
+  "settings.urgent_color.label": "Urgent color"
+}

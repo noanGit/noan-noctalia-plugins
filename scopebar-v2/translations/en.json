@@ -1,0 +1,12 @@
+{
+  "settings.width.label": "Width (braille chars)",
+  "settings.lines.label": "Height (braille rows)",
+  "settings.font_size.label": "Font size",
+  "settings.sensitivity.label": "Sensitivity (%)",
+  "settings.smoothing.label": "Smoothing (%)",
+  "settings.thickness.label": "Trace thickness (dots)",
+  "settings.color.label": "Color",
+  "settings.capture_device.label": "Capture device (description)",
+  "settings.keep_every.label": "Sample decimation",
+  "settings.hide_when_idle.label": "Hide when idle"
+}
